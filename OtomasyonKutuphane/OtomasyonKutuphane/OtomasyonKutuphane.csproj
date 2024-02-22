@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1307A6EB-61EF-49A6-BC24-7C358FE38685}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OtomasyonKutuphane</RootNamespace>
+    <AssemblyName>OtomasyonKutuphane</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaForm.Designer.cs">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmanet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmanet.Designer.cs">
+      <DependentUpon>FormEmanet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKitapDegerlendirme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKitapDegerlendirme.Designer.cs">
+      <DependentUpon>FormKitapDegerlendirme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKitapKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKitapKayit.Designer.cs">
+      <DependentUpon>FormKitapKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormKitapListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormKitapListele.Designer.cs">
+      <DependentUpon>FormKitapListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeGiris.Designer.cs">
+      <DependentUpon>FormUyeGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeGuncelleme.Designer.cs">
+      <DependentUpon>FormUyeGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUyeKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUyeKayit.Designer.cs">
+      <DependentUpon>FormUyeKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYoneticiGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYoneticiGiris.Designer.cs">
+      <DependentUpon>FormYoneticiGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYoneticiGuncelleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYoneticiGuncelleme.Designer.cs">
+      <DependentUpon>FormYoneticiGuncelleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormYoneticiKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormYoneticiKayit.Designer.cs">
+      <DependentUpon>FormYoneticiKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formİade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formİade.Designer.cs">
+      <DependentUpon>Formİade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KUTUPHANEDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KUTUPHANEDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KUTUPHANEDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KUTUPHANEDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KUTUPHANEDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KUTUPHANEDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KUTUPHANEDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KUTUPHANEDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KUTUPHANEDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KUTUPHANEDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KUTUPHANEDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KUTUPHANEDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
+    <EmbeddedResource Include="AnaForm.resx">
+      <DependentUpon>AnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmanet.resx">
+      <DependentUpon>FormEmanet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKitapDegerlendirme.resx">
+      <DependentUpon>FormKitapDegerlendirme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKitapKayit.resx">
+      <DependentUpon>FormKitapKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormKitapListele.resx">
+      <DependentUpon>FormKitapListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeGiris.resx">
+      <DependentUpon>FormUyeGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeGuncelleme.resx">
+      <DependentUpon>FormUyeGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUyeKayit.resx">
+      <DependentUpon>FormUyeKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYoneticiGiris.resx">
+      <DependentUpon>FormYoneticiGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYoneticiGuncelleme.resx">
+      <DependentUpon>FormYoneticiGuncelleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormYoneticiKayit.resx">
+      <DependentUpon>FormYoneticiKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formİade.resx">
+      <DependentUpon>Formİade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="KUTUPHANEDataSet.xsc">
+      <DependentUpon>KUTUPHANEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KUTUPHANEDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KUTUPHANEDataSet.xss">
+      <DependentUpon>KUTUPHANEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet1.xsc">
+      <DependentUpon>KUTUPHANEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KUTUPHANEDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KUTUPHANEDataSet1.xss">
+      <DependentUpon>KUTUPHANEDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet2.xsc">
+      <DependentUpon>KUTUPHANEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KUTUPHANEDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KUTUPHANEDataSet2.xss">
+      <DependentUpon>KUTUPHANEDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet3.xsc">
+      <DependentUpon>KUTUPHANEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KUTUPHANEDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KUTUPHANEDataSet3.xss">
+      <DependentUpon>KUTUPHANEDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet4.xsc">
+      <DependentUpon>KUTUPHANEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KUTUPHANEDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KUTUPHANEDataSet4.xss">
+      <DependentUpon>KUTUPHANEDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet5.xsc">
+      <DependentUpon>KUTUPHANEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="KUTUPHANEDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KUTUPHANEDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KUTUPHANEDataSet5.xss">
+      <DependentUpon>KUTUPHANEDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
